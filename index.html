@@ -28,7 +28,7 @@
             console.log('response', response)
       console.log('header', response.headers.get('Content-Type'))
         // Convert to JSON
-            return response.items()
+            return response.text()
         }).then(function(items) {
             // Yay, `j` is a JavaScript object
             console.log(JSON.stringify(items))
