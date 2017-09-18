@@ -21,7 +21,7 @@
         <script src="/fetch.js"></script>
         
         <script>
-    var result = fetch('http://raindrop.io/v1/bookmarks/678013?perpage=40&page=0')
+    var result = fetch('https://raindrop.io/v1/bookmarks/678013?perpage=40&page=0')
     result.then(function(response) {
       console.log('response', response)
       console.log('header', response.headers.get('Content-Type'))
