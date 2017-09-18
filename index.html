@@ -21,7 +21,7 @@
         <script src="/fetch.js"></script>
         
         <script>
-    var result = fetch('https://devapi.saved.io/bookmarks?devkey=TP8dfooTv5c8HXoIoBjBPoHbhhNf9hp5&key=68RcedB0Egk6dkOS7lIJIKUHVl4K9a9h&list=github-pages')
+    var result = fetch('http://devapi.saved.io/bookmarks?devkey=TP8dfooTv5c8HXoIoBjBPoHbhhNf9hp5&key=68RcedB0Egk6dkOS7lIJIKUHVl4K9a9h&list=github-pages')
     result.then(function(response) {
       console.log('response', response)
       console.log('header', response.headers.get('Content-Type'))
