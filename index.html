@@ -25,14 +25,16 @@
   <script>
     var result = fetch('https://raindrop.io/v1/bookmarks/678013?page=0', {mode: 'no-cors'})
     result.then(function(response) {
-      // Convert to JSON
-            return response.json()
-        }).then(function(j) {
+            console.log('response', response)
+      console.log('header', response.headers.get('Content-Type'))
+        // Convert to JSON
+            return response.items()
+        }).then(function(items) {
             // Yay, `j` is a JavaScript object
-            console.log(JSON.stringify(j.items))
+            console.log(JSON.stringify(items))
         }).catch(function(ex) {
       console.log('failed', ex)
-    });
+    })
   </script>
   
         
