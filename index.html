@@ -31,7 +31,7 @@
             return response.text()
         }).then(function(text) {
             // Yay, `j` is a JavaScript object
-           console.log('got text', text)
+           console.log('got text', text.items)
         }).catch(function(ex) {
       console.log('failed', ex)
     })
