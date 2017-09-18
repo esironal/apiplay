@@ -23,7 +23,7 @@
         
                 
   <script>
-    var result = fetch('https://query.yahooapis.com/v1/public/yql?q=use%20%22https%3A%2F%2Fraw.githubusercontent.com%2Fyql%2Fyql-tables%2Fmaster%2Fdata%2Fdata.headers.xml%22%20as%20headers%3B%20select%20*%20from%20headers%20where%20url%3D%22http%3a%2f%2fraindrop.io%2fv1%2fbookmarks%2f678013%3fperpage%3d40%26page%3d0%22&format=json', {mode: 'no-cors'})
+    var result = fetch('https://raindrop.io/v1/bookmarks/678013?page=0', {mode: 'no-cors'})
     result.then(function(response) {
             console.log('response', response)
       console.log('header', response.headers.get('Content-Type'))
